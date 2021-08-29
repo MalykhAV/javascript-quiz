@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz </title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -21,14 +21,7 @@
         </div>
     </header>
     <main>
-        <div id="content">
-            <h1 id="question"></h1>
-            <button id="answer1" class="answer"></button>
-            <button id="answer2" class="answer"></button>
-            <button id="answer3" class="answer"></button>
-            <button id="answer4" class="answer"></button>
-        </div>
-        <div class="container">
+        <div id="start-page">
             <h1 class="welcome">Coding Quiz Challenge</h1>
             <p>
                 Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
@@ -36,10 +29,17 @@
             </p>
             <button id="start">Start</button>
         </div>
-        <div>
-            <button id="back">Back</button>
-            <button id="next">Next</button>
+        <div id="question-page" style="display:none">
+            <h1 id="question"></h1>
+            <button id="answer1" class="answer"></button>
+            <button id="answer2" class="answer"></button>
+            <button id="answer3" class="answer"></button>
+            <button id="answer4" class="answer"></button>
         </div>
+        <div class="done-page" style="display:none">
+            <h1 class="welcome">You're done!</h1>
+        </div>
+    
     </main>
     <script src="./assets/script.js"></script>
 </body>
